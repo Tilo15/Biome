@@ -1,0 +1,9 @@
+/lib
+/tools
+/meson-info
+/meson-logs
+/meson-private
+.ninja_deps
+.ninja_log
+build.ninja
+compile_commands.json
