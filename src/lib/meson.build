@@ -8,6 +8,7 @@ dependencies = [
 
 sources = files('Biome.vala')
 sources += files('FakeRoot.vala')
+sources += files('Standard/Paths.vala')
 sources += files('Elements/ElementIdentifier.vala')
 sources += files('Elements/Element.vala')
 sources += files('Elements/ElementRepository.vala')
