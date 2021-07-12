@@ -1,0 +1,11 @@
+prefix=/home/bbarrow/biome
+srcdir=/home/bbarrow/biome/src
+libdir=${prefix}/lib64
+includedir=${prefix}/include
+
+Name: biome-0.1
+Description: Biome: biome-0.1
+Version: undefined
+Requires.private: glib-2.0, gobject-2.0, gee-0.8, json-glib-1.0
+Libs: -L${prefix}/lib -lbiome-0.1
+Cflags: -I${prefix}/lib -I${srcdir}/lib

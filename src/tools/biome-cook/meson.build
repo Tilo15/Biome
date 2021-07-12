@@ -7,6 +7,7 @@ dependencies = [
     libbiome_dep
 ]
 
-sources = files('Shittest.vala')
+sources = files('Cook.vala')
+sources += files('HybridRepository.vala')
 
-executable('shittest', sources, dependencies: dependencies)
+executable('biome-cook', sources, dependencies: dependencies)

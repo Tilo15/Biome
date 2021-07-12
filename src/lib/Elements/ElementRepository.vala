@@ -1,10 +1,10 @@
 namespace LibBiome.Elements {
 
-    public interface ElementRepository {
+    public interface ElementRepository : Object {
 
-        public abstract bool HasElement(ElementIdentifier identifier);
+        public abstract bool has_element(ElementIdentifier identifier);
 
-        public abstract Element GetElement(ElementIdentifier identifier) throws GLib.Error;
+        public abstract Element get_element(ElementIdentifier identifier) throws GLib.Error;
 
     }
 

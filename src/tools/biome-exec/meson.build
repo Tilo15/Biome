@@ -7,6 +7,6 @@ dependencies = [
     libbiome_dep
 ]
 
-sources = files('Shittest.vala')
+sources = files('exec.vala')
 
-executable('shittest', sources, dependencies: dependencies)
+executable('biome-exec', sources, dependencies: dependencies)

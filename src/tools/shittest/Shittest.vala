@@ -1,25 +1,29 @@
+using LibBiome.Environment;
+using LibBiome.Filesystem;
 using LibBiome.Elements;
 
 namespace Biome.Shittest {
 
     void main(string[] argv) {
-        var biome = new LibBiome.Biome();
-        biome.name = "test";
+
+        //  var element_id = argv[1].split(":");
+
+        print(LibBiome.Standard.Paths.serailise_secret(LibBiome.Standard.Paths.new_secret()));
+        print("\n");
         
-        var repo = new FilesystemRepository("/biome/repo");
+        //  var description = new EnvironmentDescription() {
+        //      name = "test-environment",
+        //      base_filesystem = LibBiome.Standard.get_generic_structure(),
+        //      root_element = new ElementIdentifier() {
+        //          fully_qualified_name = element_id[0],
+        //          version = element_id[1]
+        //      }
+        //  };
 
-        foreach (var arg in argv[1:argv.length]) {
-            var data = arg.split(":", 2);
-            ElementIdentifier id = ElementIdentifier() {
-                fully_qualified_name = data[0],
-                version = data[1]
-            };
-            print(@"Loading element $(id.fully_qualified_name) version $(id.version)\n");
-            biome.elements.append(repo.GetElement(id));
-        }
+        //  var repo = new FilesystemRepository(LibBiome.Standard.Paths.REPOSITORY);
+        //  var builder = new EnvironmentBuilder(repo);
+        //  builder.build(description);
 
-        print("Starting build...\n");
-        biome.build("/stupidmountpoint");
     }
 
 }
